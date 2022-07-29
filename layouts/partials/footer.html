@@ -1,0 +1,30 @@
+        </div>
+    </div>
+    <div id="content-right">
+        <div id="nav-sidebar" class="widget">
+            <h4>About</h4>
+            <ul>
+                {{ range .Site.Menus.sidebar}}
+                <li><a href="{{ .URL }}" title="{{ .Title  }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div> 
+        <div id="arch-sponsors" class="widget">
+            <h4>Sponsors</h4>
+            {{ range .Site.Menus.sponsor}}
+            <a href="{{.URL}}" title="{{.Title}}">
+              <img src="/images/sponsors/{{.Name}}.png" title="" alt="{{.Title}} logo" width="300px" >
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright © 2021-2022 <a href="https://bioarchlinux.org" title="Contact Community">BioArchLinux members</a>.</p>
+        <p>The BioArchLinux name and logo are recognized
+        <p>The registered trademark Linux® is used pursuant to a sublicense from LMI,
+        the exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.</p>
+    </div>
+</div>
+</div>
+</body>
+</html>
